@@ -19,69 +19,82 @@
     <title>Home</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-section">
-      <div class="ms-5 container-fluid">
-        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Kategori
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+    <div class="navbar-wrapper">
+      <div class="navbar-section">
+        <nav class="navbar navbar-expand-lg">
+          <div class="ms-5 container-xl">
+            <a class="navbar-brand" href="#"
+              ><img src="img/logo.png" alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link category"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="img/ic_category.png" alt="" />
+                    <span>Kategori</span>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
-            </li>
-          </ul>
-          <form class="d-flex search-form">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
-          <div class="btn-cart-section ms-3">
-            <button class="btn btn-cart-app">Cart</button>
+              <form class="d-flex search-form">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-search" type="submit">
+                  <img src="img/find.png" alt="" />
+                </button>
+              </form>
+              <div class="btn-section ms-3">
+                <div class="cart">
+                  <a href=""
+                    ><img src="img/cart.png" alt="" /><span class="counter"
+                      >0</span
+                    ></a
+                  >
+                </div>
+                <button class="btn btn-primary-app">Daftar</button>
+                <button class="btn btn-secondary-app">Masuk</button>
+              </div>
+            </div>
           </div>
-          <div class="btn-section ms-3">
-            <button class="btn btn-primary-app">login</button>
-            <button class="btn btn-secondary-app">Sign Up</button>
-          </div>
-        </div>
+        </nav>
       </div>
-    </nav>
+    </div>
     <main>
-      <div class="container hero-slider">
+      <div class="container-xl hero-slider">
         <div class="slider-kotak"></div>
       </div>
-      <div class="container">
+      <div class="container-xl">
         <div class="title-slider">
           <p>Kategori Pilihan</p>
           <p>Top Lelang</p>
@@ -91,7 +104,7 @@
           <div class="slider-top-lelang"></div>
         </div>
       </div>
-      <div class="container">
+      <div class="container-xl">
         <section class="section-products">
           <h1 class="title-products">Lelang Hari Ini</h1>
           <div class="products-wrapper">
